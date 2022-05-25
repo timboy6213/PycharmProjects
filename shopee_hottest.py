@@ -12,7 +12,7 @@ for index in range(5):
     url = url + str(index)
     r = req.get(url, headers=header)
     root_json = r.json()
-    print("-----------------test" + str(index )+ "--------")
+    print("-----------------test" + str(index ) + "--------")
     num = 1
     for data in root_json['items']:
         print(str(data['item_basic']['shopid']) + "，" + data['item_basic']['name'] + ":" + str(data['item_basic']['price']))
